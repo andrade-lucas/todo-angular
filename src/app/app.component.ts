@@ -18,12 +18,5 @@ const COMPONENTS = [ThemeToggleComponent, MainComponent];
   `,
   styles: ``,
 })
-export class AppComponent implements OnInit {
-  private themeService = inject(ThemeService);
-
-  public ngOnInit(): void {
-    const currentColorTheme = this.themeService.getPreferredColorTheme();
-
-    this.themeService.setColorTheme(currentColorTheme);
-  }
+export class AppComponent {
 }
